@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+@font-face{
+    font-family:"JetBrainsMono";
+    src: url(fonts/JetBrainsMono/JetBrainsMono-Regular.woff2);
+}
+
+main{
+    margin: 20px;
+}
+
+body {
+    font-family: JetBrainsMono;
+    background-image: url("images/jaggedflies.png");
+    background-repeat: repeat;
+    background-color: rgb(5, 2, 15);
+    margin:0px;
+}
+
+
+.navbar ul{
+    list-style-type:none;
+    background-color:#292336;
+    padding:10px;
+    margin:0px;
+    overflow:hidden;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: clamp(1rem, 0.6vw + 0.6rem, 3.5rem);
+}
+.navbar a{
+    color:#ff9270;
+    text-decoration:none;
+    padding:15px;
+    text-align:left;
+}
+
+.navbar a:hover{
+    color:white;
+}
+
+.navbar li{
+    float: left;
+}
+
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+    
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.fakeimg {
+    background-color: #ffefcf;
+    padding:20px;
+    width:100%
+}
+
+.card {
+    background-color: #ffefcf;
+    border-color:#ff9270;
+    border-style:dotted;
+    padding:20px;
+    margin-top: 20px
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h2{
+    color: #ff9270;
+}
+
+h5{
+    color: #ff9270;
+}
+
+p{
+    color: #ff9270; 
+}
+
+a{ 
+        text-decoration:none; 
+        color:#ff9270; 
+        font-weight:bold;
+         
+}
+
+
+#clickable:hover{
+   border-style:solid;
+   border-width:5px; 
+}
+
+#blogwelcome{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}

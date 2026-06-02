@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family:"JetBrainsMono";
+    src: url(fonts/JetBrainsMono/JetBrainsMono-Regular.woff2);
+}
+
+main{
+    padding:20px;
+}
+
+
+
+body {
+    font-family: JetBrainsMono;
+    background: url("images/birdsandfishes.png"), linear-gradient(
+        to bottom, #ff7e5f 20%, #feb47b 80%
+        );
+    background-repeat: repeat, no-repeat;
+    background-attachment:fixed;
+    margin:0px;
+}
+
+.navbar ul{
+    list-style-type:none;
+    background-color:#292336;
+    padding:10px;
+    margin:0px;
+    overflow:hidden;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: clamp(1rem, 0.6vw + 0.6rem, 3.5rem);
+}
+.navbar a{
+    color:#ff9270;
+    text-decoration:none;
+    padding:15px;
+    text-align:left;
+}
+
+.navbar a:hover{
+    color:white;
+}
+
+.navbar li{
+    float: left;
+}
+
+
+.column{
+    display: flex;
+    justify-content:center;
+    gap:20px;
+}
+
+#topleftcard {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width: 30%;
+    padding: 20px;
+}
+
+#topleftcard h5{
+    margin-top: 0;
+}
+#toprightcard a{
+    margin-top: 0;
+}
+
+#toprightcard {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width: 20%;
+    padding: 20px;
+}
+#middlecard{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    width:30%;
+    padding:20px;
+}
+
+
+.card {
+    background-color: #ffefcf;
+    border-color:#ff9270;
+    border-style:dotted;
+    padding:20px;
+    margin-top: 20px;
+}
+
+a{ 
+        text-decoration:none; 
+        color:#ff9270; 
+        font-weight:bold;
+}
+
+a:hover{
+    color:white;
+}
+
+h2{
+    color: #ff9270;
+    font-size: clamp(1rem, 1vw + 1rem, 3.5rem);
+}
+
+
+h5{
+    color: #ff9270;
+    font-size: clamp(1rem, 0.5vw + 1rem, 3.5rem);
+}
+
+P{
+    color: #ff9270;
+    font-size: clamp(1rem, 0.2vw + 1rem, 3.5rem);
+    line-height:1em;
+}
+
+img{
+    max-width: 100%;
+    min-width:15%;
+    height: auto;
+}
+
+#websitelink{
+    font-size: clamp(0.1rem, 0.4vw + 1rem, 3.5rem);
+
+}
+
+@media screen and (max-width: 800px) {
+    #middlecard {
+        width: 100%;
+        padding: 0;
+    }
+    #topleftcard{
+        width: 50%;
+    }
+    #toprightcard{
+        width: 40%;
+    }
+    #websitelink{
+        font-size:10px;
+        line-height:1%;
+    }
+}
