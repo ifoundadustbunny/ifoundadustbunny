@@ -13,7 +13,7 @@ main{
 
 body {
     font-family: JetBrainsMono;
-    background: url("images/birdsandfishes2.png"), linear-gradient(
+    background: url("images/sheeep.png"), linear-gradient(
         to bottom, #81b29c 20%, #c09ac4 80%
         );
     background-repeat: repeat, no-repeat;
