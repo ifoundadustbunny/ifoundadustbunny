@@ -14,8 +14,7 @@ main{
 body {
     font-family: JetBrainsMono;
     background-image: url("images/sheeep.png");
-    background-repeat: repeat, no-repeat;
-    background-attachment:fixed;
+    background-repeat: repeat;
     margin:0px;
 }
 
