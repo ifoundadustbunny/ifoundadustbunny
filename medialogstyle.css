@@ -13,9 +13,7 @@ main{
 
 body {
     font-family: JetBrainsMono;
-    background: url("images/sheeep.png"), linear-gradient(
-        to bottom, #81b29c 20%, #c09ac4 80%
-        );
+    background-image: url("images/sheeep.png");
     background-repeat: repeat, no-repeat;
     background-attachment:fixed;
     margin:0px;
